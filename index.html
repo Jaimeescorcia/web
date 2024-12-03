@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión de Booky</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Agrega los scripts de Firebase aquí -->
+    <!-- Como Firebase ahora usa módulos ES6, debes asegurarte de que los scripts se carguen como módulos -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/01_LogoBooky.png" alt="Logo de Booky" id="logo">
+    </header>
+
+    <main>
+        <div class="login-form">
+           <!--  <h2>INICIAR SESIÓN</h2>  --> 
+            <form id="login-form">
+                <input type="email" placeholder="Ingresar Correo" id="usuario" name="usuario" required>
+                <input type="password" placeholder="Ingresar Contraseña" id="contrasena" name="contrasena" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Booky. Todos los derechos reservados.</p>
+        <div class="enlaces-pie">
+            <a href="#">Por si lleva footers</a>
+        </div>
+    </footer>
+
+    <!-- Agrega tu archivo JavaScript que contiene el código para la autenticación de Firebase -->
+    <!-- Asegúrate de que el script app.js también se cargue como un módulo ES6 -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
